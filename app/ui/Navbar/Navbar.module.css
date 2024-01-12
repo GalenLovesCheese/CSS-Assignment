@@ -1,0 +1,43 @@
+/* navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    background: linear-gradient(to right, #002AFF, #2680EB, #76D6FF);
+    height: 80px; /* Adjust the height as needed */
+    padding: 0 20px;
+    margin:0;
+  }
+
+  .logo{
+    position: relative;
+    top: 40px;
+    left: -61px;
+    z-index: 1;
+  }
+  
+.navItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+
+.logo{
+  position: relative;
+  top: 80%;
+  left: -10%;
+}
+
+.navitem{
+  color:white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navitem:hover{
+    font-size:20px;
+    color: #FFD500;
+    font-weight: bolder;
+}
