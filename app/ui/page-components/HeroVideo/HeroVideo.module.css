@@ -3,8 +3,9 @@
 .heroVideoContainer {
     position: relative;
     width: 100vw;
-    height: 100vh; /* Set the viewport height */
+    height: 90vh; /* Set the viewport height - Accomodate for the actual height of the video overflowing out of the strating viewport, causing the need to scroll*/
     overflow: hidden;
+    font-family: 'LilitaOne', sans-serif; /*custom font*/
   }
   
   .heroVideo {
@@ -12,12 +13,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
     
   }
   .heroSubText {
+    display:flex;
+    flex-direction: column;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -27,11 +30,9 @@
     text-align: center;
     z-index: 1;
     padding-bottom: 30px;
-    backdrop-filter: blur(10px);
-    
   }
   
-  .heroSubText h1 {
+  .heroSubText span {
     font-size: 60px; /* Adjust the font size as needed */
     text-align: center;
   }
