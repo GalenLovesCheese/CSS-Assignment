@@ -1,0 +1,32 @@
+.Container {
+  position: relative;
+  background-image: url("../../public/media/brawlersPage-bg-image.svg"); 
+  background-size: cover;
+  z-index: 0;
+  height: auto;
+  font-family: 'LilitaOne', sans-serif; ;
+  color: black;
+  overflow: hidden;
+}
+
+.brawlers_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  z-index: 1;
+  overflow: auto;
+}
+
+.brawler_item {
+  margin: 10px; /* Adjust as needed for spacing between items */
+  text-align: center;
+}
+
+.brawler_name{
+  font-size: 30px;
+}

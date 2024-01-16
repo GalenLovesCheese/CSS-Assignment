@@ -12,23 +12,21 @@ const Footer = () => (
   <footer className={`page-footer font-small blue pt-4 text-white ${styles.footer}`}>
     <div className="container-fluid text-center justify-content-center">
 
-      <Nav className="d-flex justify-content-center" activeKey="/home">
-        <Nav.Item>
-          <Link href="/" className="px-3">Home</Link> {/* Added some padding for the links, to space them out */}
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="/profile" className="px-3">Profile</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="#" className="px-3">Brawlers</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="#" className="px-3">Events</Link>
+      <Nav className="d-flex justify-content-center pb-2" activeKey="/home">
+        <Nav.Item className="px-3">
+          <Nav.Link href="/" className="px-3">Home</Nav.Link> {/* Added some padding for the links, to space them out */}
         </Nav.Item>
         <Nav.Item className="px-3">
-          <Link href="#" >
-            Leaderboards
-          </Link>
+          <Nav.Link href="./profile">Profile</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="px-3">
+          <Nav.Link href="./brawlers">Brawlers</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="px-3">
+          <Nav.Link href="#">Events</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="px-3">
+          <Nav.Link href="#">Leaderboards</Nav.Link>
         </Nav.Item>
       </Nav>
 

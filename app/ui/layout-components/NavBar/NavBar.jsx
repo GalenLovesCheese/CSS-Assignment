@@ -27,24 +27,24 @@ function NavBar() {
         <Navbar.Collapse>
           <Nav className="d-flex align-items-center mx-auto justify-content-center"> {/* Add justify-content-center class here */}
             <NavItem>
-              <Link href="/" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
+              <Nav.Link href="/" className={`text-white pe-5 fs-4 `}>
                 Home
-              </Link>
+              </Nav.Link>
             </NavItem>
             <NavItem>
-              <Link href="/profile" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
+              <Nav.Link href="./profile" className={`text-white pe-5 fs-4`}>
                 <span>Profile</span>
-              </Link>
+              </Nav.Link>
             </NavItem>
             <NavItem>
-              <Link href="#" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
+              <Nav.Link href="./brawlers" className={`text-white pe-5 fs-4`}>
                 <span>Brawlers</span>
-              </Link>
+              </Nav.Link>
             </NavItem>
-            <NavItem >
-              <Link href="#" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
+            <NavItem>
+              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
                 <span>Events</span>
-              </Link>
+              </Nav.Link>
             </NavItem>
             <NavItem>
               <NavDropdown title={
