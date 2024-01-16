@@ -31,7 +31,7 @@ function NavBar() {
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
+              <Nav.Link href="./brawlers" className={`text-white pe-5 fs-4`}>
                 <span>Brawlers</span>
               </Nav.Link>
             </NavItem>
