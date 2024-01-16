@@ -18,7 +18,7 @@ const HeroVideo = () => {
       <div
         className={`${styles.heroSubText} d-flex align-items-center`}
       >
-        <span>Welcome to Brawckers</span>
+        <span className={styles.text}>Welcome to Brawckers</span>
         <a href="#slider">
           <Image
               alt="Double down arrow"

@@ -1,3 +1,4 @@
+//For page layout By Tay King Yu, Galen
 "use client";
 
 import styles from "./Footer.module.css";
@@ -6,24 +7,26 @@ import Nav from 'react-bootstrap/Nav';
 import font from "../../fonts.css";
 import Link from "next/link";
 
+
 const Footer = () => (
   <footer className={`page-footer font-small blue pt-4 text-white ${styles.footer}`}>
     <div className="container-fluid text-center justify-content-center">
 
-      <Nav className="justify-content-center" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/">Home</Nav.Link>
+      <Nav className="d-flex justify-content-center pb-2" activeKey="/home">
+        <Nav.Item className="px-3">
+          <Nav.Link href="/" className="px-3">Home</Nav.Link> {/* Added some padding for the links, to space them out */}
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="px-3">
+          <Nav.Link href="./profile">Profile</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="px-3">
           <Nav.Link href="./brawlers">Brawlers</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="px-3">
           <Nav.Link href="#">Events</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#" >
-            Leaderboards
-          </Nav.Link>
+        <Nav.Item className="px-3">
+          <Nav.Link href="#">Leaderboards</Nav.Link>
         </Nav.Item>
       </Nav>
 
