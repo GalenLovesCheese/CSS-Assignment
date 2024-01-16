@@ -1,4 +1,4 @@
-//For page layout
+//For page layout by Tay King Yu, Galen
 'use client';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,6 +8,7 @@ import NavItem from 'react-bootstrap/NavItem';
 import styles from "./Navbar.module.css";
 import fonts from "../../fonts.css";
 import Image from "next/legacy/image";
+import Link from 'next/link';
 
 function NavBar() {
   return (
@@ -24,26 +25,26 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Nav className="mx-auto justify-content-center"> {/* Add justify-content-center class here */}
+          <Nav className="d-flex align-items-center mx-auto justify-content-center"> {/* Add justify-content-center class here */}
             <NavItem>
-              <Nav.Link href="/" className={`text-white pe-5 fs-4`}>
+              <Link href="/" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
                 Home
-              </Nav.Link>
+              </Link>
             </NavItem>
             <NavItem>
-              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
+              <Link href="/profile" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
+                <span>Profile</span>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="#" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
                 <span>Brawlers</span>
-              </Nav.Link>
-            </NavItem>
-            <NavItem>
-              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
-                <span>Profiles</span>
-              </Nav.Link>
+              </Link>
             </NavItem>
             <NavItem >
-              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
+              <Link href="#" className={`text-white pe-5 fs-4 ${styles.removelink}`}>
                 <span>Events</span>
-              </Nav.Link>
+              </Link>
             </NavItem>
             <NavItem>
               <NavDropdown title={
