@@ -2,22 +2,24 @@
   position: relative;
   background-image: url("../../public/media/brawlersPage-bg-image.svg"); 
   background-size: cover;
-  height: 4000px;
   z-index: 0;
+  height: auto;
   font-family: 'LilitaOne', sans-serif; ;
   color: black;
+  overflow: hidden;
 }
 
 .brawlers_container {
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; 
   z-index: 1;
+  overflow: auto;
 }
 
 .brawler_item {
@@ -28,8 +30,3 @@
 .brawler_name{
   font-size: 30px;
 }
-
-
-
-
-
