@@ -11,12 +11,13 @@ import { useLocalStorage } from './useLocalStorage';
 const { getItem, setItem } = useLocalStorage('turns')
 
 const cardImages = [
-    {"src" : "/media/card-face-1.webp", matched: false},
-    {"src" : "/media/card-face-2.webp", matched: false},
-    {"src" : "/media/card-face-3.webp", matched: false},
-    {"src" : "/media/card-face-4.webp", matched: false},
-    {"src" : "/media/card-face-5.webp", matched: false},
-    {"src" : "/media/card-face-6.webp", matched: false},
+    /*Sourced from https://brawlstars.fandom.com/wiki/Profile_Icons*/ 
+    {"src" : "/media/card-face-1.png", matched: false},
+    {"src" : "/media/card-face-2.png", matched: false},
+    {"src" : "/media/card-face-3.png", matched: false},
+    {"src" : "/media/card-face-4.png", matched: false},
+    {"src" : "/media/card-face-5.png", matched: false},
+    {"src" : "/media/card-face-6.png", matched: false},
 ]
 
 
