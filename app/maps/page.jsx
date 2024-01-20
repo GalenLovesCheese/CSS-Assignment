@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function App1() {
-  const IP_API_URL = "https://api.brawlapi.com/v1/brawlers";
+  const IP_API_URL = "https://api.brawlapi.com/v1/gamemodes";
   const { data, error, isLoading } = useSWR(IP_API_URL, fetcher);
 
   if (error) {

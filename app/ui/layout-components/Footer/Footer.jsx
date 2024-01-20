@@ -4,8 +4,8 @@
 import styles from "./Footer.module.css";
 import React from "react";
 import Nav from 'react-bootstrap/Nav';
-import font from "../../fonts.css";
-import Link from "next/link";
+
+
 
 
 const Footer = () => (
@@ -17,10 +17,10 @@ const Footer = () => (
           <Nav.Link href="/" className="px-3">Home</Nav.Link> {/* Added some padding for the links, to space them out */}
         </Nav.Item>
         <Nav.Item className="px-3">
-          <Nav.Link href="./profile">Profile</Nav.Link>
+          <Nav.Link href="./brawlers">Brawlers</Nav.Link>
         </Nav.Item>
         <Nav.Item className="px-3">
-          <Nav.Link href="./brawlers">Brawlers</Nav.Link>
+          <Nav.Link href="./mini-game">Mini-Game</Nav.Link>
         </Nav.Item>
         <Nav.Item className="px-3">
           <Nav.Link href="#">Events</Nav.Link>
