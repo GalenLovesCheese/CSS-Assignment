@@ -1,3 +1,4 @@
+// For landing page 
 'use client';
 import React from "react";
 import Slider from "react-slick";
@@ -31,6 +32,7 @@ const BrawlerSlider = () => {
   };
 
   return (
+    /* Slider items sourced from https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=en&gl=US */
     <div className="custom-card-group-container pt-5 mb-5" id="slider">
       <Slider {...settings} className={styles.customSlider}>
         <div>

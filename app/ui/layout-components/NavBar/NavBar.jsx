@@ -6,18 +6,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropDown';
 import NavItem from 'react-bootstrap/NavItem';
 import styles from "./Navbar.module.css";
-import fonts from "../../fonts.css";
 import Image from "next/legacy/image";
-import Link from 'next/link';
 
-function NavBar() {
+
+const NavBar = () => {
   return (
     <Navbar expand="lg" className={`bg-body-tertiary justify-content-center ${styles.navbar} me-0`}>
       <Container>
         <Navbar.Brand href="/">
           <Image
             alt="Brawl stars logo"
-            src="/media/Brawl-Stars-Logo.png"
+            src="/media/Brawl-Stars-Logo.png" /* Logo sourced from https://logos-world.net/brawl-stars-logo/ */
             height={70}
             width={70}
             className= {` d-inline-block align-center text-white position-absoulte ml-4`}
@@ -32,13 +31,13 @@ function NavBar() {
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link href="./profile" className={`text-white pe-5 fs-4`}>
-                <span>Profile</span>
+              <Nav.Link href="./brawlers" className={`text-white pe-5 fs-4`}>
+                <span>Brawlers</span>
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link href="./brawlers" className={`text-white pe-5 fs-4`}>
-                <span>Brawlers</span>
+              <Nav.Link href="./mini-game" className={`text-white pe-5 fs-4`}>
+                <span>Mini-Game</span>
               </Nav.Link>
             </NavItem>
             <NavItem>

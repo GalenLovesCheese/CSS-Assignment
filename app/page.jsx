@@ -1,3 +1,5 @@
+/* page.jsx / Landing page by Tay King Yu, Galen*/
+
 import styles from "./page.module.css"
 import HeroVideo from "./ui/page-components/HeroVideo/HeroVideo";
 import Container from "react-bootstrap/Container";
@@ -23,17 +25,17 @@ export default function Home() {
               className={`${styles.phonepos} `}
             />
           </Container>
-          <Container className={`${styles.bodytext} mt-5 `}>
+          <Container className={`pe-5 me-4 mt-5 `}>
             <h1> 
-              Your Ultimate Brawl Stars Tracker 🚀
+              Discover the excitement at your fingertips with BrawlHub! 🚀
             </h1>
             <h3>
               <ul>
-              <li>🏆 Leaderboards at Your Fingertips: Stay ahead of the competition by tracking your progress and comparing stats with top players worldwide.</li>
+              <li>🗺️ Map Mayhem: Navigate strategic maps like a pro.</li>
               <br />
-              <li>📊 In-Depth Player Stats: Dive into detailed statistics for each brawler, from win rates to power levels – empowering you to refine your strategies.</li>
+              <li> 🤖 Brawler Mystery: Find our more about the different brawlers</li>
               <br />
-              <li>🌟 Event Notifications: Never miss a critical event again! Receive instant notifications for upcoming events, challenges, and special promotions.</li>
+              <li>🧠 Memory Challenge:: Test your memory with our mini-game.</li>
               </ul>
             </h3>
          
