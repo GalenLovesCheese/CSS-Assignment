@@ -1,11 +1,23 @@
-/* page.jsx/ brawlers page by Michael Joseph Tjokro*/
-
+/* Maps page by Teo Hong Rui Freddy*/
 "use client";
 
 import React from "react";
 import useSWR from "swr";
 import styles from "./page.module.css";
 
+function Banner() {
+  return (
+      <div className={`${styles.banner}`}>
+          <img src="/media/Background.jpg"></img>
+          <div className={`${styles.bannertext}`}>
+              <div className={`${styles.whitebox}`}>
+                  <h1>Events</h1>
+                  <p>Navigate your way to victory!</p>
+              </div>
+          </div>
+      </div>
+  )
+}
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 

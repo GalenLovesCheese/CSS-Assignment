@@ -1,3 +1,4 @@
+/* Events page by Teo Hong Rui Freddy*/
 "use client";
 
 import Link from "next/link";
@@ -16,11 +17,11 @@ const gameModeNames = gameModes.map(item => item.name);
 function Banner() {
     return (
         <div className={`${styles.banner}`}>
-            <img src="/media/Background.jpg"></img>
+            <img src="/media/Background4.jpg"></img>
             <div className={`${styles.bannertext}`}>
                 <div className={`${styles.whitebox}`}>
                     <h1>Events</h1>
-                    <p>Navigate your way to victory!</p>
+                    <p>Don’t miss out on the fun!</p>
                 </div>
             </div>
         </div>
@@ -145,7 +146,6 @@ export default function EventPage() {
     </div>
   );
 }
-
 
 /*
 export default function EventPage() {
