@@ -44,8 +44,8 @@ const NavBar = () => {
               <NavDropdown title={
                 <span className='text-white my-auto'>More</span>
                 } className={`fs-4 `}>
-                <NavDropdown.Item href="#./events">Events</NavDropdown.Item>
-                <NavDropdown.Item href="#./maps">Maps</NavDropdown.Item>
+                <NavDropdown.Item href="./events">Events</NavDropdown.Item>
+                <NavDropdown.Item href="./maps">Maps</NavDropdown.Item>
               </NavDropdown>
             </NavItem>
           </Nav>
