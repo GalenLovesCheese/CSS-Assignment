@@ -3,6 +3,7 @@
 "use client";
 
 import React from "react";
+import fonts from "../ui/fonts.css"
 import useSWR from "swr";
 import styles from "./page.module.css";
 
