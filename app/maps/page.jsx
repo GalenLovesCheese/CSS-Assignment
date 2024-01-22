@@ -16,9 +16,13 @@ export default function Maps() {
 
     return (
         <><div data-section-id>
+            <div className={`${styles.maps_title}`}>
+                <h1>Popular Game Modes</h1>
+                
             <section id="GemGrab">
                 <h2>Gem Grab</h2>
                 <p>Collect gems and hold them to win!</p>
+                
             </section>
             <section id="BrawlBall">
                 <h2>Brawl Ball</h2>
