@@ -1,10 +1,12 @@
-/* page.jsx */
+/* page.jsx/ brawlers page by Michael Joseph Tjokro*/
 
 "use client";
 
 import React from "react";
+import fonts from "../ui/fonts.css"
 import useSWR from "swr";
 import styles from "./page.module.css";
+
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
