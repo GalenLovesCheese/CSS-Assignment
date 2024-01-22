@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "LilitaOne";
+    src: url('../../public/fonts/Lilita_One/LilitaOne-Regular.ttf');
+  }
+@font-face {
+font-family: "Nougat";
+src: url('../../public/fonts/nougat/Nougat-ExtraBlack.ttf');
+}
+
+.lilitaone{
+font-family: "LilitaOne";
+}
+.Nougat{
+font-family: "Nougat";
+}

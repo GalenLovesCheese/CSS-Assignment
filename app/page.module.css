@@ -1,0 +1,32 @@
+.Container{
+  position: relative;
+  background-image: url("../public/media/home-page-background.png");
+  background-size: cover;
+  font-family: 'LilitaOne', sans-serif; /*custom font*/
+  color: white;
+}
+.bg {
+  /* The image used /
+  background-image: url("public/media/home-page-background.png");
+
+  / Full height /
+  height: 100%;
+
+  / Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.phonepos{
+  position: relative;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+
+.bodytext{
+  
+}
