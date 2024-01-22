@@ -1,12 +1,14 @@
 .Container {
-  position: relative;
-  background-image: url("../../public/media/brawlersPage-bg-image.svg"); 
-  background-size: cover;
-  z-index: 0;
-  height: auto;
-  font-family: 'LilitaOne', sans-serif; ;
+  font-family: 'LilitaOne', sans-serif;
   color: black;
+  background-image: url("../../public/media/brawlersPage-bg-image.svg"); 
+  z-index: 0;
   overflow: hidden;
+  text-align:center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; 
 }
 
 .brawlers_container {
@@ -25,6 +27,11 @@
 .brawler_item {
   margin: 10px; /* Adjust as needed for spacing between items */
   text-align: center;
+}
+
+.brawler_item:hover{
+  transform:scale(108%);
+  filter: brightness(80%);
 }
 
 .brawler_name{
