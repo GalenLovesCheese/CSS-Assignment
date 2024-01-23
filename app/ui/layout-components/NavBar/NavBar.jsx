@@ -41,11 +41,16 @@ const NavBar = () => {
               </Nav.Link>
             </NavItem>
             <NavItem>
+              <Nav.Link href="#" className={`text-white pe-5 fs-4`}>
+                <span>Events</span>
+              </Nav.Link>
+            </NavItem>
+            <NavItem>
               <NavDropdown title={
-                <span className='text-white my-auto'>More</span>
+                <span className='text-white my-auto'>Leaderboard</span>
                 } className={`fs-4 `}>
-                <NavDropdown.Item href="./events">Events</NavDropdown.Item>
-                <NavDropdown.Item href="./maps">Maps</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Players</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Clubs</NavDropdown.Item>
               </NavDropdown>
             </NavItem>
           </Nav>
