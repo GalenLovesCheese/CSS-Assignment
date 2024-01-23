@@ -3,11 +3,13 @@
 
 import Link from "next/link";
 import styles from "./page.module.css";
+import GameMode from "./Components/GameMode";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from "next/legacy/image";
 import React, {useState, useEffect} from "react";
 import useSWR from 'swr';
 import { Modal } from 'react-bootstrap';
+import fonts from "../ui/fonts.css";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const gameModes = [{name: "Gem Grab", id: "GemGrab"}, {name: "Brawl Ball", id: "BrawlBall"},{name: "Showdown", id: "Showdown"}, {name: "Heist", id: "Heist"}, {name: "Bounty", id: "Bounty"}, {name: "Siege", id: "Siege"}, {name: "Hot Zone", id: "HotZone"}, {name: "Knockout", id: "Knockout"}, {name: "Takedown", id: "Takedown"}, {name: "Big Game", id: "BigGame"}, {name: "Robo Rumble", id: "RoboRumble"}, {name: "Boss Fight", id: "BossFight"}, {name: "Super City Rampage", id: "SuperCityRampage"}, {name: "Power Play", id: "PowerPlay"}];
@@ -28,10 +30,7 @@ function Banner() {
     )
 }
 
-function currentEvents(){
-
-}
-
+/*
 function GameMode() {
     function navigateToPage(event) {
     const sectionId = event.target.dataset.sectionId;
@@ -55,7 +54,7 @@ function GameMode() {
       <div className={`${styles.gamemodes}`}>
         {gameModes.map((gameMode) => (
           <div className={`${styles.gamemodecard}`} onClick={navigateToPage}>
-            {moveToSection()}
+            {moveToSection(gameModes)}
             <div>{gameMode}</div>
           </div>
         ))}
@@ -63,7 +62,7 @@ function GameMode() {
     </div> 
   );
 }
-
+*/
 /*
 function GameMode() {
   function scrollToSection(sectionId) {
@@ -109,6 +108,7 @@ export default function EventPage() {
   return (
     <div>
       <Banner />
+      <GameMode />
       <div className={`${styles.events_title}`}>
         <h1>Events Happening Now</h1>
       </div>

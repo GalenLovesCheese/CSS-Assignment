@@ -6,7 +6,6 @@ import useSWR from "swr";
 import styles from "./page.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from "next/legacy/image";
-import Sections from "./Components/Sections";
 
 function Banner() {
   return (
@@ -33,7 +32,6 @@ export default function Maps() {
     return (
       <>
       <Banner/>
-      <Sections />
         <div data-section-id>
             <section id="GemGrab">
                 <h2>Gem Grab</h2>
