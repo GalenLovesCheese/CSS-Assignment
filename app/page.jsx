@@ -25,7 +25,7 @@ export default function Home() {
               className={`${styles.phonepos} `}
             />
           </Container>
-          <Container className={`pe-5 me-4 mt-5 pt-5 `}>
+          <Container className={`pe-5 me-4 mt-5 `}>
             <h1> 
               Discover the excitement at your fingertips with BrawlHub! 🚀
             </h1>
