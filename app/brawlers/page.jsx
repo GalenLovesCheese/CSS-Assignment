@@ -15,16 +15,16 @@ export default function App1() {
   const IP_API_URL = "https://api.brawlapi.com/v1/brawlers";
   const { data, error, isLoading } = useSWR(IP_API_URL, fetcher);
 
-    const [showModal, setShowModal] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false);
 
-    /*Keep track of the brawler 
-    that was clicked on and is currently selected*/
-    const [selectedBrawler, setSelectedBrawler] = React.useState(null); 
+  /*Keep track of the brawler 
+  that was clicked on and is currently selected*/
+  const [selectedBrawler, setSelectedBrawler] = React.useState(null); 
   
-    const handleBrawlerItemClick = (brawler) => {
-      setSelectedBrawler(brawler);
-      setShowModal(true);
-    };
+  const handleBrawlerItemClick = (brawler) => {
+    setSelectedBrawler(brawler);
+    setShowModal(true);
+  };
 
   if (error) {
     return <h1>failed to load</h1>;
@@ -51,18 +51,18 @@ export default function App1() {
               <h1 className={`${styles.brawlerinfo_header}`}>Description: </h1>
               <h5>{selectedBrawler ? selectedBrawler.description: ""}</h5>
               <h1 className={`${styles.brawlerinfo_header}`}>Star Powers: </h1>
-              {selectedBrawler.starPowers.map((item, i) => (
+              {selectedBrawler && selectedBrawler.starPowers && selectedBrawler.starPowers.map((item, i) => (
               <div key={i} className={`${styles.StarPowersAndGadgets}`}>
                 <h2>{item.name}</h2>
-                <img className={`${styles.StarPowerandGadgetImages}`}src={item.imageUrl} alt={item.name} />
+                <img className={`${styles.StarPowerandGadgetImages}`}src={item.imageUrl} alt = {item.name}/>
                 <h5>{item.description}</h5>
               </div>
               ))}
               <h1 className={`${styles.brawlerinfo_header}`}>Gadgets: </h1> 
-              {selectedBrawler.gadgets.map((item, i) => (
+              {selectedBrawler && selectedBrawler.starPowers && selectedBrawler.gadgets.map((item, i) => (
               <div key={i} className={`${styles.StarPowersAndGadgets}`}>
                 <h2>{item.name}</h2>
-                <img className={`${styles.StarPowerandGadgetImages}`}src={item.imageUrl} alt={item.name} />
+                <img className={`${styles.StarPowerandGadgetImages}`}src={item.imageUrl} alt={item.name}/>
                 <h5>{item.description}</h5>
               </div>
               ))}
