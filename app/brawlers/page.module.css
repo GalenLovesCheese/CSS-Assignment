@@ -37,3 +37,22 @@
 .brawler_name{
   font-size: 30px;
 }
+
+.brawlerinfo_title{
+  font-family: 'LilitaOne', sans-serif;
+}
+
+.brawlerinfo{
+  background-color: peachpuff;
+  font-family: 'LilitaOne', sans-serif;
+}
+
+.brawlerinfo_header{
+  font-family: 'LilitaOne', sans-serif;;
+}
+
+
+.StarPowerandGadgetImages{
+  height: 150px;
+  width: 150px;
+}
