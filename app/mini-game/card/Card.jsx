@@ -26,8 +26,7 @@ export default function Card({ card, handleChoice, flipped, disabled }) {
                         height={180}
                         width={180}
                         className={`${styles.cardImg} ${styles.back}`}
-                        onClick={handleClick}
-                        
+                        onClick={handleClick}   
                     />
                 </div>
             </div>
