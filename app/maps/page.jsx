@@ -34,64 +34,6 @@ export default function Maps() {
       <>
       <Banner/>
       <Sections />
-        <div data-section-id>
-            <section id="GemGrab">
-                <h2>Gem Grab</h2>
-                <p>Collect gems and hold them to win!</p>
-            </section>
-            <section id="BrawlBall">
-                <h2>Brawl Ball</h2>
-                <p>Score goals to win!</p>
-            </section>
-            <section id="Showdown">
-                <h2>Showdown</h2>
-                <p>Survive to win!</p>
-            </section>
-            <section id="Heist">
-                <h2>Heist</h2>
-                <p>Attack or defend to win!</p>
-            </section>
-            <section id="Bounty">
-                <h2>Bounty</h2>
-                <p>Collect stars to win!</p>
-            </section>
-            <section id="Siege">
-                <h2>Siege</h2>
-                <p>Collect bolts to win!</p>
-            </section>
-            <section id="HotZone">
-                <h2>Hot Zone</h2>
-                <p>Control the zone to win!</p>
-            </section>
-            <section id="Knockout">
-                <h2>Knockout</h2>
-                <p>Eliminate the enemy team to win!</p>
-            </section>
-            <section id="Takedown">
-                <h2>Takedown</h2>
-                <p>Deal the most damage to the boss to win!</p>
-            </section>
-            <section id="BigGame">
-                <h2>Big Game</h2>
-                <p>Defeat the boss to win!</p>
-            </section>
-            <section id="RoboRumble">
-                <h2>Robo Rumble</h2>
-                <p>Defend the safe to win!</p>
-            </section>
-            <section id="BossFight">
-                <h2>Boss Fight</h2>
-                <p>Defeat the boss to win!</p>
-            </section>
-            <section id="SuperCityRampage">
-                <h2>Super City Rampage</h2>
-                <p>Defeat the boss to win!</p>
-            </section>
-            <section id="PowerPlay">
-                <h2>Power Play</h2>
-                <p>Play to win!</p>
-            </section>
-        </div>
         <div className={`${styles.maps_title}`}>
                 <h1>All Maps</h1>
             </div><div className={`${styles.Container}`}>

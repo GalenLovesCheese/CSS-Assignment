@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'LilitaOne', sans-serif;
 }
 
 /* 
@@ -53,117 +54,6 @@
   background-color: white;
 }
 
-
-/*
-   Current Game Mode Component
-*/
-.currentgamemode {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-}
-
-.currentgamemode h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.currentgamemodecard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f44336;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
-  height: 100px;
-  transition: background-color 0.5s ease;
-}
-
-.currentgamemodecard:hover {
-  background-color: #fff;
-  color: #f44336;
-}
-
-.currentgamemodecard h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
-
-
-/* 
-  GameMode component 
-*/
-.gamemode {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-}
-
-.gamemodetitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.gamemodetitle h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  text-align: left;
-}
-
-.gamemodes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.gamemodecard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
-  height: 100px;
-  transition: background-color 0.5s ease;
-}
-
-.gamemodecard:hover {
-  background-color: #b9b9b9;
-  color: #333;
-}
-
-.gamemodecard h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-}
-
 /* 
   Events component 
 */
@@ -177,6 +67,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  background-image: url("https://preview.redd.it/zwqteuxul0d31.jpg?width=1080&crop=smart&auto=webp&s=574b6bd67bcb0f847101850d52e0d3f1a94e7bc8")
 }
 
 .events_item {
@@ -186,31 +77,62 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #FFFFFF;
 }
 
-.events_name {
+.events_item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.eventname {
   font-size: 24px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'LilitaOne', sans-serif;
 }
 
-.events_mode {
+.eventmode {
+  font-family: 'LilitaOne', sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.events_time {
-  font-size: 18px;
-  margin-bottom: 10px;
+.eventinfo_title {
+  font-size: 44px;
+  text-align: center;
+  font-family: 'LilitaOne', sans-serif; /*custom font*/
 }
 
-.events_brawlers {
-  font-size: 18px;
-  margin-bottom: 10px;
+.mapname{
+  font-family: 'LilitaOne', sans-serif; /*custom font*/;
 }
 
-.events_item img {
+.eventinfo h2 {
+  font-family:'LilitaOne', sans-serif;
+  font-size: 42px;
+}
+.eventinfo img {
   width: 100%;
-  height: auto;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.eventinfo {
+  background-color: aliceblue;
+}
+
+.eventMname{
+  font-size: 42px;
+  margin: 10px 0;
+  font-family: 'LilitaOne', sans-serif;
+}
+
+.eventMmode{
+  font-family: 'LilitaOne', sans-serif;
+  font-size: 30px;
+}
+
+.modeImg{
+  transform: scale(0.5);
 }
