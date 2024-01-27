@@ -39,7 +39,7 @@ const Footer = () => (
     </div>
 
     <div className="footer-copyright text-center py-3">
-      © 2023 Copyright: Brawckers
+      © 2023 Copyright: BrawlHub
     </div>
   </footer>
 );
