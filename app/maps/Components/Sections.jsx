@@ -3,17 +3,17 @@ import styles from './Sections.module.css';
 const Maps = () => {
     return (
       <div>
-        <section id="game-mode-1">
-          <h2>Game Mode 1</h2>
-          <p>...</p>
+        <section id="Gem-Grab">
+          <h2>Gem Grab</h2>
+          <p>Collect gems and hold them to win!</p>
         </section>
-        <section id="game-mode-2">
-          <h2>Game Mode 2</h2>
-          <p>...</p>
+        <section id="Brawl-Ball">
+          <h2>Brawl Ball</h2>
+          <p>Score goals to win!</p>
         </section>
-        <section id="game-mode-3">
-          <h2>Game Mode 3</h2>
-          <p>...</p>
+        <section id="Hot-Zone">
+          <h2>Hot Zone</h2>
+          <p>Control the zone to win!</p>
         </section>
       </div>
     )
