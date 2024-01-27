@@ -3,7 +3,7 @@
 
 import styles from "./page.module.css";
 import GameMode from "./Components/GameMode";
-
+import CountdownTimer from "./Components/Countdown";
 import React from "react";
 import useSWR from 'swr';
 import fonts from "../ui/fonts.css";
@@ -59,8 +59,8 @@ export default function EventPage() {
           <div key={i} className={`${styles.events_item}`} onClick = {() => handleEventItemClick(item)}>
             <h1 className={`${styles.eventname}`}>{item.slot.name}</h1>
             <h3 className={`${styles.eventmode}`}>{item.map.gameMode.name}</h3>
+            <CountdownTimer startDate={item.startTime} endDate={item.endTime} />
             <img src={item.map.gameMode.imageUrl} alt={item.map.gameMode.name} width="150" height="200" />
-
           </div>
         ))}
         {/* Modal for displaying more information about an event when it's clicked on */}
