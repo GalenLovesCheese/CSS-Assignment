@@ -23,10 +23,10 @@ const Footer = () => (
           <Nav.Link href="./mini-game">Mini-Game</Nav.Link>
         </Nav.Item>
         <Nav.Item className="px-3">
-          <Nav.Link href="#">Events</Nav.Link>
+          <Nav.Link href="./events">Events</Nav.Link>
         </Nav.Item>
         <Nav.Item className="px-3">
-          <Nav.Link href="#">Leaderboards</Nav.Link>
+          <Nav.Link href="./maps">Maps</Nav.Link>
         </Nav.Item>
       </Nav>
 
