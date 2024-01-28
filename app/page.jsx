@@ -35,7 +35,7 @@ export default function Home() {
               <br />
               <li> 🤖 Brawler Mystery: Find our more about the different brawlers</li>
               <br />
-              <li>🧠 Memory Challenge:: Test your memory with our mini-game.</li>
+              <li>🧠 Memory Challenge: Test your memory with our mini-game.</li>
               </ul>
             </h3>
          

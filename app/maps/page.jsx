@@ -1,12 +1,14 @@
 /* Maps page by Teo Hong Rui Freddy*/
 "use client";
 
+import styles from "./page.module.css";
+import Buttons from "./Components/Buttons";
 import React from "react";
 import useSWR from "swr";
-import styles from "./page.module.css";
+import fonts from "../ui/fonts.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from "next/legacy/image";
 import Sections from "./Components/Sections";
+
 
 function Banner() {
   return (

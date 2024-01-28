@@ -111,15 +111,6 @@
   .gamemode {
     padding: 20px;
   }
-/*
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-*/
 }
 
 /* Set background images for each item
@@ -135,3 +126,50 @@
   background-image: url('path/to/image3.jpg');
 }
 */
+
+
+/* Modal styles */
+.eventinfo_title {
+  font-size: 24px;
+  color: #333;
+  font-family: LilitaOne, sans-serif
+}
+
+.eventMname {
+  font-size: 28px;
+  color: #333;
+  font-family: LilitaOne, sans-serif;
+}
+
+.eventMmode {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+  font-family: LilitaOne, sans-serif;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.close {
+  color: #fff;
+}
+
+/* Additional styles for specific sections */
+.eventinfo h2 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 5px;
+  font-family: Nougat, sans-serif
+}

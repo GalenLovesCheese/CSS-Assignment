@@ -1,3 +1,5 @@
+/* Countdown component by Teo Hong Rui Freddy*/
+
 import React, { useEffect, useState } from 'react';
 import styles  from './Countdown.module.css';
 

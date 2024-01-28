@@ -1,116 +1,110 @@
+/* Sections by Teo Hong Rui Freddy*/
+
 import useSWR from 'swr';
+import styles from './Sections.module.css';
+import Buttons from './Buttons';
+import React, { useEffect, useState } from 'react';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-const Maps = () => {
+const Sections = () => {
   const { data, error } = useSWR('https://api.brawlapi.com/v1/maps', fetcher);
+  const [selectedGameMode, setSelectedGameMode] = useState('Gem-Grab');
 
   if (error) return <div>Failed to load maps</div>;
   if (!data) return <div>Loading...</div>;
 
-  const gemGrabMaps = data.filter(map => map.game_modes.includes('gemGrab'));
-  const brawlBallMaps = data.filter(map => map.game_modes.includes('brawlBall'));
-  const hotZoneMaps = data.filter(map => map.game_modes.includes('hotZone'));
+  const handleGameModeChange = (gameModeId) => {
+    setSelectedGameMode(gameModeId);
+  };
 
   return (
-    <div>
-      <section id="Gem-Grab">
-        <h2>Gem Grab</h2>
-        <p>Collect gems and hold them to win!</p>
-        {gemGrabMaps.map(map => (
-          <div key={map.id}>
-            <h3>{map.name}</h3>
-            <img src={map.image_url} alt={map.name} />
-          </div>
-        ))}
-      </section>
-      <section id="Brawl-Ball">
-        <h2>Brawl Ball</h2>
-        <p>Score goals to win!</p>
-        {brawlBallMaps.map(map => (
-          <div key={map.id}>
-            <h3>{map.name}</h3>
-            <img src={map.image_url} alt={map.name} />
-          </div>
-        ))}
-      </section>
-      <section id="Hot-Zone">
-        <h2>Hot Zone</h2>
-        <p>Control the zone to win!</p>
-        {hotZoneMaps.map(map => (
-          <div key={map.id}>
-            <h3>{map.name}</h3>
-            <img src={map.image_url} alt={map.name} />
-          </div>
-        ))}
-      </section>
-    </div>
+    <>
+      <Buttons onGameModeChange={handleGameModeChange} />
+      <div className={`${styles.Container}`}>
+        <div className={`${styles.GemGrab}`} id="Gem-Grab"> 
+          {data.list
+            .filter((map) => map.gameMode.name === "Gem Grab")
+            .map((map, i) => (
+              <div key={i} className={`${styles.maps_item}`}>
+                <h2>{map.name}</h2>
+                <img src={map.imageUrl} alt={map.name} />
+              </div>
+            ))}
+        </div>
+        <div className={`${styles.GemGrab}`} id="Brawl-Ball">
+          {data.list
+            .filter((map) => map.gameMode.name === "Brawl Ball")
+            .map((map, i) => (
+              <div key={i} className={`${styles.maps_item}`}>
+                <h2>{map.name}</h2>
+                <img src={map.imageUrl} alt={map.name} />
+              </div>
+            ))}
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Maps;
-
+export default Sections;
 
 /*
-// Usage
-const gameMode = 'SHOWDOWN';
-const maps = await getMapsByGameMode(gameMode);
-console.log(maps);
+const Sections = () => {
+  const { data, error } = useSWR('https://api.brawlapi.com/v1/maps', fetcher);
+  const [selectedGameMode, setSelectedGameMode] = useState('Gem-Grab'); // Default to Gem Grab
 
+  if (error) return <div>Failed to load maps</div>;
+  if (!data) return <div>Loading...</div>;
 
-const Maps = () => {
-  
-  const [gemGrabMaps, setGemGrabMaps] = useState([]);
-  const [brawlBallMaps, setBrawlBallMaps] = useState([]);
-  const [hotZoneMaps, setHotZoneMaps] = useState([]);
-
-  useEffect(() => {
-    const fetchMaps = async () => {
-      const response = await fetch('https://api.brawlapi.com/v1/maps');
-      const data = await response.json();
-      setGemGrabMaps(data.find(mode => mode.name === 'GemGrab').maps);
-      setBrawlBallMaps(data.find(mode => mode.name === 'Brawl Ball').maps);
-      setHotZoneMaps(data.find(mode => mode.name === 'Hot Zone').maps);
-    };
-
-    fetchMaps();
-  }, []);
+  const handleGameModeChange = (gameModeId) => {
+    setSelectedGameMode(gameModeId);
+  };
 
   return (
-    <div>
-      <section id="Gem-Grab">
-        <h2>Gem Grab</h2>
-        <p>Collect gems and hold them to win!</p>
-        <ul>
-          {gemGrabMaps.map(map => (
-            <li key={map.id}>
-              <img src={map.image} alt={map.name} />
-              <p>{map.name}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section id="Brawl-Ball">
-        <h2>Brawl Ball</h2>
-        <p>Score goals to win!</p>
-        <ul>
-          {brawlBallMaps.map(map => (
-            <li key={map.id}>{map.name}</li>
-          ))}
-        </ul>
-      </section>
-      <section id="Hot-Zone">
-        <h2>Hot Zone</h2>
-        <p>Control the zone to win!</p>
-        <ul>
-          {hotZoneMaps.map(map => (
-            <li key={map.id}>{map.name}</li>
-          ))}
-        </ul>
-      </section>
-    </div>
+    <>
+      <Buttons onGameModeChange={handleGameModeChange} />
+      <div className={`${styles.Container}`}>
+        <div className={`${styles.GemGrab}`} id="Gem-Grab">
+          <h2>Gem Grab</h2>
+          {selectedGameMode === 'Gem-Grab' &&
+            data.list
+              .filter((map) => map.gameMode.name === 'Gem Grab') // Adjust 'gemGrab' based on your data structure
+              .map((map, i) => (
+                <div key={i} className={`${styles.maps_item}`}>
+                  <h1 className={`${styles.maps_name}`}>{map.name}</h1>
+                  <img src={map.imageUrl} alt={map.name} />
+                </div>
+              ))}
+        </div>
+        <div className={`${styles.BrawlBall}`} id="Brawl-Ball">
+          <h2>Brawl Ball</h2>
+          {selectedGameMode === 'Brawl-Ball' &&
+            data.list
+              .filter((map) => map.gameMode.name === 'Brawl Ball') // Adjust 'gemGrab' based on your data structure
+              .map((map, i) => (
+                <div key={i} className={`${styles.maps_item}`}>
+                  <h1 className={`${styles.maps_name}`}>{map.name}</h1>
+                  <img src={map.imageUrl} alt={map.name} />
+                </div>
+              ))}
+        </div>
+        <div className={`${styles.HotZone}`} id="Hot-Zone">
+          <h2>Hot Zone</h2>
+          {selectedGameMode === 'Hot-Zone' &&
+            data.list
+              .filter((map) => map.gameMode.name === 'Hot Zone') // Adjust 'gemGrab' based on your data structure
+              .map((map, i) => (
+                <div key={i} className={`${styles.maps_item}`}>
+                  <h1 className={`${styles.maps_name}`}>{map.name}</h1>
+                  <img src={map.imageUrl} alt={map.name} />
+                </div>
+              ))}
+        </div>
+      </div>
+    </>
   );
 };
-*/
 
-  
+export default Sections;
+*/
