@@ -1,3 +1,4 @@
+//For mini-game by Tay King Yu, Galen
 import styles from "./card.module.css"
 import Image from "next/image";
 

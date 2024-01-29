@@ -1,4 +1,5 @@
-// For landing page 
+// For landing page by Tay King Yu, Galen
+// Automated sliding cards to display several brawl stars related images
 'use client';
 import React from "react";
 import Slider from "react-slick";

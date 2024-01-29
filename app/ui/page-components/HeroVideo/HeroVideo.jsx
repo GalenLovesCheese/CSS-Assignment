@@ -1,9 +1,9 @@
-//For Landing page
+//For Landing page by Tay King Yu, Galen
+//Hero video using bootstrap, loops indefinately
 'use client';
 import React from "react";
-
 import styles from './HeroVideo.module.css';
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 
 

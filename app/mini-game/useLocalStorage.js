@@ -1,3 +1,8 @@
+/* 
+For Memory game by Tay King Yu, Galen
+Reference - React Custom Hooks: useLocalStorage - Simply Explained!
+https://www.youtube.com/watch?v=1uiNxQIpcLU&t=437s&ab_channel=CosdenSolutions
+*/
 export const useLocalStorage = (key) => {
     const setItem = (value) => {
         try{

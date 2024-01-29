@@ -1,7 +1,15 @@
 /* page.jsx / Memory game by Tay King Yu, Galen*/
+/* Reference - Net Ninja Make a memory game with react(https://www.youtube.com/@NetNinja) for logic*/
+/*Added - Local storage system to keep track of number of turns */
+/*Added - Local storage to maintain last flipped cards*/
+/*Added
+ - Seeding system to create reproducable random value generator for local storage of card positions
+ - Generate new random arrangements of cards by starting new game
+ */
+/*npm install seedrandom*/ 
 "use client";
 import styles from './page.module.css';
-import fonts from "../ui/fonts.css"
+import fonts from "../ui/fonts.css" // Import for custom font
 import { Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Card from './card/card';
