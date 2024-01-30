@@ -1,3 +1,4 @@
+//Layout.jsx
 import './globals.css';
 import { Inter } from 'next/font/google';
 import NavBar from './ui/layout-components/NavBar/Navbar'; 

@@ -1,4 +1,8 @@
 /* page.jsx / Landing page by Tay King Yu, Galen*/
+//Added Hero video
+//Added Automated slider 
+//Added arrow down for auto scroll
+//Made page somewhat reactive
 
 import styles from "./page.module.css"
 import HeroVideo from "./ui/page-components/HeroVideo/HeroVideo";

@@ -1,4 +1,6 @@
 //For page layout by Tay King Yu, Galen
+//Navbar for navigation
+//Collapses into side bar when past a certain viewport
 'use client';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
