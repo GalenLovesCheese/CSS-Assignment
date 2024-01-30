@@ -100,11 +100,7 @@
   }
   
   .item:nth-of-type(12) {
-    background-color: magenta;
-  }
-  
-  .item:nth-of-type(13) {
-    background-color: #dc2423;
+    background-color: #ffdd00;
   }
   
   

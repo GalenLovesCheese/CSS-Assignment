@@ -52,11 +52,6 @@ const GameModes = [
         name: 'Boss Fight',
     },
     {
-        id: 'Power-Play',
-        name: 'Power Play',
-        
-    },
-    {
         id: 'Robo-Rumble',
         name: 'Robo Rumble',
     },
