@@ -1,3 +1,5 @@
+/* GameMode component by Teo Hong Rui Freddy*/
+
 "use client";
 
 import {Modal} from 'react-bootstrap';
