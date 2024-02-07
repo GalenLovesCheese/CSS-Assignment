@@ -49,19 +49,18 @@
 .whitebox-container {
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: left; /* Center the whitebox */
   padding: 20px; /* Adjust padding as needed */
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .whitebox {
-  width: 450px;
-  height: 250px;
+  max-width: 90%; /* Set a maximum width for the whitebox */
   border: 1px solid rgb(255, 255, 255);
   border-radius: 24px;
   padding: 8px;
-  margin-right: 20px; /* Add margin for separation */
   background-color: white;
+  text-align: center; /* Center the text inside the whitebox */
 }
 
 /* 
@@ -151,3 +150,14 @@
   transform: scale(0.5);
 }
 
+@media screen and (max-width: 768px) {
+  .whitebox {
+    max-width: 80%; /* Adjust maximum width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whitebox {
+    max-width: 100%; /* Adjust maximum width for even smaller screens */
+  }
+}
