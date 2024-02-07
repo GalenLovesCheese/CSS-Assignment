@@ -6,6 +6,7 @@ import {Modal} from 'react-bootstrap';
 import styles from './GameMode.module.css';
 import React, { useState } from 'react';
 
+/*Information for the modals for each game mode*/
 const GameModes = [
     {
         id: 'Gem-Grab',
@@ -120,6 +121,7 @@ const GameModes = [
     const [showModal, setShowModal] = useState(false);
     const [selectedEvent, setSelectedEvent] = useState(null);
   
+    // Handle click event for each game mode
     const handleClick = (mode) => {
       setSelectedEvent(mode);
       setShowModal(true);
@@ -135,11 +137,13 @@ const GameModes = [
           <div className={`${styles.gamemodes}`}>
             {GameModes.map((mode) => (
               <div className={`${styles.item}`} key={mode.id}>
+                {/* Clicking on the game mode title triggers the modal */}
                 <h2 onClick={() => handleClick(mode)}>{mode.name}</h2>
               </div>
             ))}
           </div>
         </div>
+        {/* Modal for displaying mode details */}
         <Modal show={showModal} onHide={() => setShowModal(false)}>
           <Modal.Header closeButton>
             <Modal.Title className={`${styles.eventinfo_title}`}>Mode Details</Modal.Title>
@@ -154,7 +158,6 @@ const GameModes = [
             <h4 className={`${styles.eventMmode}`}>{selectedEvent ? selectedEvent.tips : ''}</h4>
             <h4 className={`${styles.eventMmode}`}>{selectedEvent ? selectedEvent.ftips : ''}</h4>
             <h4 className={`${styles.eventMmode}`}>{selectedEvent ? selectedEvent.ftips2 : ''}</h4>
-            {/* Other content you want to add */}
           </Modal.Body>
         </Modal>
       </>

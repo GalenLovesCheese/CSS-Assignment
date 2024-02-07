@@ -9,6 +9,7 @@ import useSWR from 'swr';
 import fonts from "../ui/fonts.css"; 
 import {Modal}  from 'react-bootstrap'
 
+{/* Banner component */}
 function Banner() {
   return (
       <div className={`${styles.banner}`}>
@@ -23,9 +24,8 @@ function Banner() {
   )
 }
 
-
+{/*Getting data from API*/}
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
-
 
 export default function EventPage() {
   const IP_API_URL = "https://api.brawlapi.com/v1/events";
@@ -53,12 +53,16 @@ export default function EventPage() {
     <>
     <Banner />
     <GameMode />
+
+    {/*Shows the current events in game and the relevant information*/}
     <div className={`${styles.Container}`}>
       <div className={`${styles.events_container}`}>
         {data.active.map((item, i) => (
           <div key={i} className={`${styles.events_item}`} onClick = {() => handleEventItemClick(item)}>
             <h1 className={`${styles.eventname}`}>{item.slot.name}</h1>
             <h3 className={`${styles.eventmode}`}>{item.map.gameMode.name}</h3>
+
+            {/*Applying the Countdown timer component*/}
             <CountdownTimer startDate={item.startTime} endDate={item.endTime} />
             <img src={item.map.gameMode.imageUrl} alt={item.map.gameMode.name} width="150" height="200" />
           </div>

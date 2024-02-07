@@ -10,38 +10,48 @@
 /* 
   Banner component 
 */
-.banner{
+.banner {
   position: relative;
-  width: auto;
-  height: 85vh; /* Set the viewport height - Accomodate for the actual height of the image overflowing out of the strating viewport, causing the need to scroll*/
+  width: 100%;
+  max-height: 100vh;
   overflow: hidden;
   font-family: 'LilitaOne', sans-serif; /*custom font*/
 }
 
 .banner img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-.bannertext{
+.bannertext {
   position: absolute;
   top: 20%;
+  left: 10%; /* Adjust as needed */
+  text-align: left; /* Align text to the left */
   color: #000000;
-  padding: 10px
+  padding: 10px;
 }
 
-.bannertext h1{
+.bannertext h1 {
   font-family: 'Nougat', sans-serif; /*custom font*/
-  font-size: 150px;
+  font-size: 11vw; /* Using viewport units for responsive font size */
   font-weight: 100;
   margin: 0;
 }
 
-.bannertext p{
+.bannertext p {
   font-family: 'LilitaOne', sans-serif; /*custom font*/
-  font-size: 28px;
+  font-size: 3vw; /* Using viewport units for responsive font size */
   font-weight: 100;
   margin: 0;
+}
+
+.whitebox-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .whitebox {
@@ -50,7 +60,7 @@
   border: 1px solid rgb(255, 255, 255);
   border-radius: 24px;
   padding: 8px;
-  margin: 20px;
+  margin-right: 20px; /* Add margin for separation */
   background-color: white;
 }
 
@@ -67,11 +77,13 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  background-image: url("https://preview.redd.it/zwqteuxul0d31.jpg?width=1080&crop=smart&auto=webp&s=574b6bd67bcb0f847101850d52e0d3f1a94e7bc8")
+  background-image: url("https://preview.redd.it/zwqteuxul0d31.jpg?width=1080&crop=smart&auto=webp&s=574b6bd67bcb0f847101850d52e0d3f1a94e7bc8");
+  background-size: cover;
 }
 
 .events_item {
-  width: 300px;
+  width: 45%; /* Adjust as needed */
+  max-width: 300px;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -87,34 +99,36 @@
 }
 
 .eventname {
-  font-size: 24px;
+  font-size: 2vw; /* Using viewport units for responsive font size */
   font-weight: bold;
   margin: 10px 0;
   font-family: 'LilitaOne', sans-serif;
 }
 
 .eventmode {
-  font-family: 'LilitaOne', sans-serif;
-  font-size: 18px;
+  font-size: 1.2vw; /* Using viewport units for responsive font size */
   margin-bottom: 10px;
+  font-family: 'LilitaOne', sans-serif;
 }
 
 .eventinfo_title {
-  font-size: 44px;
+  font-size: 4vw; /* Using viewport units for responsive font size */
   text-align: center;
   font-family: 'LilitaOne', sans-serif; /*custom font*/
 }
 
-.mapname{
-  font-family: 'LilitaOne', sans-serif; /*custom font*/;
+.mapname {
+  font-family: 'LilitaOne', sans-serif; /*custom font*/
 }
 
 .eventinfo h2 {
-  font-family:'LilitaOne', sans-serif;
-  font-size: 42px;
+  font-family: 'LilitaOne', sans-serif;
+  font-size: 3.5vw; /* Using viewport units for responsive font size */
 }
+
 .eventinfo img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin: 20px 0;
 }
 
@@ -122,17 +136,18 @@
   background-color: aliceblue;
 }
 
-.eventMname{
-  font-size: 42px;
+.eventMname {
+  font-size: 3.5vw; /* Using viewport units for responsive font size */
   margin: 10px 0;
   font-family: 'LilitaOne', sans-serif;
 }
 
-.eventMmode{
+.eventMmode {
+  font-size: 2vw; /* Using viewport units for responsive font size */
   font-family: 'LilitaOne', sans-serif;
-  font-size: 30px;
 }
 
-.modeImg{
+.modeImg {
   transform: scale(0.5);
 }
+
