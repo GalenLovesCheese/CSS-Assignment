@@ -8,6 +8,7 @@ import React from "react";
 import useSWR from 'swr';
 import fonts from "../ui/fonts.css"; 
 import {Modal}  from 'react-bootstrap'
+import fonts from "../ui/fonts.css";
 
 {/* Banner component */}
 function Banner() {

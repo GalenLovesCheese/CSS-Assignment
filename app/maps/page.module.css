@@ -24,27 +24,27 @@
 }
 
 .bannertext h1{
-  font-family: 'Nougat', sans-serif; /*custom font*/
+  font-family: 'LilitaOne', sans-serif; /*custom font*/
   font-size: 150px;
   font-weight: 100;
   margin: 0;
 }
 
 .bannertext p{
-  font-family: 'LilitaOne', sans-serif; /*custom font*/
+  font-family: 'Nougat', sans-serif; /*custom font*/
   font-size: 28px;
   font-weight: 100;
   margin: 0;
 }
 
 .whitebox {
-  width: 450px;
-  height: 250px;
+  max-width: 100%; /* Set a maximum width for the whitebox */
   border: 1px solid rgb(255, 255, 255);
   border-radius: 24px;
-  padding: 8px;
-  margin: 20px;
+  padding: 15px;
   background-color: white;
+  text-align: center; /* Center the text inside the whitebox */
+ 
 }
 
 /* 
