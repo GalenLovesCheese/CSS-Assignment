@@ -6,7 +6,7 @@
 .banner{
   position: relative;
   width: 100vw;
-  height: 85vh; /* Set the viewport height - Accomodate for the actual height of the image overflowing out of the strating viewport, causing the need to scroll*/
+  height: 100vh; /* Set the viewport height - Accomodate for the actual height of the image overflowing out of the strating viewport, causing the need to scroll*/
   overflow: hidden;
   font-family: 'LilitaOne', sans-serif; /*custom font*/
 }
@@ -19,8 +19,10 @@
 .bannertext{
   position: absolute;
   top: 20%;
+  left: 10%; /* Adjust as needed */
+  text-align: left; /* Align text to the left */
   color: #000000;
-  padding: 10px
+  padding: 10px;
 }
 
 .bannertext h1{
