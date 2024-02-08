@@ -5,7 +5,7 @@
 */
 .banner{
   position: relative;
-  width: 100%x;
+  width: 100vw;
   height: 85vh; /* Set the viewport height - Accomodate for the actual height of the image overflowing out of the strating viewport, causing the need to scroll*/
   overflow: hidden;
   font-family: 'LilitaOne', sans-serif; /*custom font*/
