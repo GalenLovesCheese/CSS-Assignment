@@ -7,6 +7,7 @@ import CountdownTimer from "./Components/Countdown";
 import React from "react";
 import useSWR from 'swr'; 
 import {Modal}  from 'react-bootstrap'
+import fonts from "../ui/fonts.css";
 
 {/* Banner component */}
 function Banner() {

@@ -33,14 +33,14 @@
 }
 
 .bannertext h1 {
-  font-family: 'Nougat', sans-serif; /*custom font*/
+  font-family: 'LilitaOne', sans-serif; /*custom font*/
   font-size: 11vw; /* Using viewport units for responsive font size */
   font-weight: 100;
   margin: 0;
 }
 
 .bannertext p {
-  font-family: 'LilitaOne', sans-serif; /*custom font*/
+  font-family: 'Nougat', sans-serif; /*custom font*/
   font-size: 3vw; /* Using viewport units for responsive font size */
   font-weight: 100;
   margin: 0;
@@ -55,10 +55,10 @@
 }
 
 .whitebox {
-  max-width: 90%; /* Set a maximum width for the whitebox */
+  max-width: 100%; /* Set a maximum width for the whitebox */
   border: 1px solid rgb(255, 255, 255);
   border-radius: 24px;
-  padding: 8px;
+  padding: 15px;
   background-color: white;
   text-align: center; /* Center the text inside the whitebox */
 }
