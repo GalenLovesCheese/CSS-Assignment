@@ -51,3 +51,9 @@ npm install seedrandom
    ```sh
    npm start
    ```
+
+### Team Members
+
+1. Galen Tay
+2. Michael Tjokro
+3. Freddy Teo
